@@ -1,8 +1,17 @@
-# Blind-Satellite-VSR
+# Blind-Satellite-VSR (IEEE TGRS 2023)
+### 📖[**Paper**](https://ieeexplore.ieee.org/document/10172076) | 🖼️[**PDF**](/img/BSVSR.pdf)
 [Yi Xiao](https://xy-boy.github.io/), [Qiangqiang Yuan*](http://qqyuan.users.sgg.whu.edu.cn/), [Qiang Zhang](https://github.com/kuijiang94/home/blob/master/home.md), and [Liangpei Zhang](http://www.lmars.whu.edu.cn/prof_web/zhangliangpei/rs/index.html)<br>
 Wuhan University and Dalian Maritime University  
 
-This is the official PyTorch implementation of our paper entitled "Deep Blind Super-Resolution for Satellite Video", which is submitted to IEEE TGRS.
+PyTorch codes for "[Deep Blind Super-Resolution for Satellite Video](https://doi.org/10.1016/j.inffus.2023.03.021)", **IEEE Transactions on Geoscience and Remote Sensing (TGRS)**, 2023.
+
+### Network
+ ![image](/img/network.jpg)
+## 🧩Install
+```
+git clone https://github.com/XY-boy/Blind-Satellite-VSR.git
+```
+## Requirements
 ### 🖼️Visual comparison against SOTAs
  ![image](uc.png)
 ### 🧩Usage
