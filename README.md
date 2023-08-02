@@ -5,7 +5,7 @@ Wuhan University and Dalian Maritime University
 
 PyTorch codes for "[Deep Blind Super-Resolution for Satellite Video](https://doi.org/10.1016/j.inffus.2023.03.021)", **IEEE Transactions on Geoscience and Remote Sensing (TGRS)**, 2023.
 
-### Network
+### 🌱 Overall Network
  ![image](/img/network.png)
 ## 🧩Install
 ```
