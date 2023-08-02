@@ -18,7 +18,7 @@ Coming soon!
 ## Results
 ### 🖼️Visual comparison against SOTAs
  ![image](uc.png)
-### Quantitative comparison against SOTAs
+### 🌱Quantitative comparison against SOTAs
  ![image](./img/res.png)
 
 ## Contact
