@@ -101,12 +101,29 @@ class PWC_Recons(nn.Module):
         base = F.interpolate(base, scale_factor=self.scale, mode='bilinear', align_corners=False)
 
         warped_feat_list = []
-        for i in range(self.n_sequence):
-            if not i == self.n_sequence // 2:
-                warped_feat = self.msd_align(frame_feat_list[i], frame_feat_list[self.n_sequence // 2])
-                warped_feat_list.append(warped_feat)
-            else:
-                warped_feat_list.append(frame_feat_list[i])
+        # slide window 1
+        warped_feat_01 = self.msd_align(frame_feat_list[0], frame_feat_list[1])
+        warped_feat_21 = self.msd_align(frame_feat_list[2], frame_feat_list[1])
+        warped_feat_1 = self.fusion_conv(torch.cat([warped_feat_01, frame_feat_list[1], warped_feat_21], dim=1))
+        warped_feat_list.append(warped_feat_1)
+        # slide window 2
+        warped_feat_12 = self.msd_align(frame_feat_list[1], frame_feat_list[2])
+        warped_feat_32 = self.msd_align(frame_feat_list[3], frame_feat_list[2])
+        warped_feat_2 = self.fusion_conv(torch.cat([warped_feat_12, frame_feat_list[2], warped_feat_32], dim=1))
+        warped_feat_list.append(warped_feat_2)
+
+        # slide window 3
+        warped_feat_23 = self.msd_align(frame_feat_list[2], frame_feat_list[3])
+        warped_feat_43 = self.msd_align(frame_feat_list[4], frame_feat_list[3])
+        warped_feat_3 = self.fusion_conv(torch.cat([warped_feat_23, frame_feat_list[3], warped_feat_43], dim=1))
+        warped_feat_list.append(warped_feat_3)
+
+        # for i in range(self.n_sequence):
+        #     if not i == self.n_sequence // 2:
+        #         warped_feat = self.msd_align(frame_feat_list[i], frame_feat_list[self.n_sequence // 2])
+        #         warped_feat_list.append(warped_feat)
+        #     else:
+        #         warped_feat_list.append(frame_feat_list[i])
         
         feat_to_msd_fusion = torch.stack(warped_feat_list, dim=1)  # b n=3 128 64 64
         
