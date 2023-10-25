@@ -2,7 +2,7 @@
 ### 📖[**Paper**](https://ieeexplore.ieee.org/document/10172076) | 🖼️[**PDF**](/img/XY-BSVSR.pdf)
 PyTorch codes for "[Deep Blind Super-Resolution for Satellite Video](https://ieeexplore.ieee.org/abstract/document/10172076)", **IEEE Transactions on Geoscience and Remote Sensing (TGRS)**, 2023.
 
-Authors: [Yi Xiao](https://xy-boy.github.io/), [Qiangqiang Yuan*](http://qqyuan.users.sgg.whu.edu.cn/), [Qiang Zhang](https://github.com/kuijiang94/home/blob/master/home.md), and [Liangpei Zhang](http://www.lmars.whu.edu.cn/prof_web/zhangliangpei/rs/index.html)<br>
+Authors: [Yi Xiao](https://xy-boy.github.io/), [Qiangqiang Yuan*](http://qqyuan.users.sgg.whu.edu.cn/), [Qiang Zhang](https://qzhang95.github.io/), and [Liangpei Zhang](http://www.lmars.whu.edu.cn/prof_web/zhangliangpei/rs/index.html)<br>
 Wuhan University and Dalian Maritime University 
 
 ### Abstract
