@@ -25,10 +25,11 @@ Coming soon!
  ![image](./img/res.png)
 
 ## Contact
-If you have any questions or suggestions, feel free to contact me.  
-Email: xiao_yi@whu.edu.cn; Tel: (+86) 15927574475 (WeChat)
+If you have any questions or suggestions, feel free to contact me. 😊  
+Email: xiao_yi@whu.edu.cn; xy574475@gmail.com
+
 ## Citation
-If you find our work helpful in your research, kindly cite it. Thank you for your interest and support for our work! 😊😊
+If you find our work helpful in your research, kindly cite it. Thank you for your interest and support for our work! 😊
 ```
 @ARTICLE{xiao2023bsvsr,
   author={Xiao, Yi and Yuan, Qiangqiang and Zhang, Qiang and Zhang, Liangpei},
