@@ -24,6 +24,10 @@ Coming soon!
 ### 🌱Quantitative comparison against SOTAs
  ![image](./img/res.png)
 
+## Acknowledgement
+Our work is built upon DBVSR (https://github.com/cscss/DBVSR) and EDVR (https://github.com/xinntao/EDVR).  
+Thanks to the author for sharing these source codes!
+
 ## Contact
 If you have any questions or suggestions, feel free to contact me. 😊  
 Email: xiao_yi@whu.edu.cn; xy574475@gmail.com
