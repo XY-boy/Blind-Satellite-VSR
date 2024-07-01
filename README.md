@@ -15,9 +15,39 @@ Wuhan University and Dalian Maritime University
 git clone https://github.com/XY-boy/Blind-Satellite-VSR.git
 ```
 ## Requirements
+### 1. Build DCNv2
+```
+cd model/DCNv2
+sh make.sh
+```
+
+### 2. Build Deformable Attention
+```
+cd model/ops
+sh make.sh
+```
+
+### 3. Download the Pretrained PWC-Net
+[Download](https://xy-boy.github.io/)
 
 ### 🧩Usage
-Coming soon!
+### 1. Train the Kernel Prediction Network
+```
+python main.py --template KernelPredict
+```
+### 2. Rename the Pretrained Checkpoint
+- Put the trained model to './pretrain_models'
+- rename it to 'kernel_x4.pt'.
+
+### 3. Train the VideoSR Network
+```
+python main.py --template VideoSR
+```
+### 4. Test
+```
+python inference.py --input_path /LR/videos --gt_path /GT/videos --model_path /pretrained-model-name
+```
+
 ## Results
 ### 🖼️Visual comparison against SOTAs
  ![image](uc.png)
